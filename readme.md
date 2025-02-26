@@ -7,13 +7,17 @@ This project demonstrates two types of chat applications: one using **Internet D
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Technology Stack](#technology-stack)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Usage](#usage)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Internet Domain Socket](#internet-domain-socket-chat-application)
+  - [Unix Domain Socket](#unix-domain-socket-chat-application)
 - [Directory Structure](#directory-structure)
-- [Example](#example)
+- [Code Explanation](#code-explanation)
+  - [Internet Domain Socket (TCP)](#internet-domain-socket-tcp)
+  - [Unix Domain Socket](#unix-domain-socket)
 - [License](#license)
+- [Authors](#authors)
 
 ## Project Overview
 
@@ -39,23 +43,23 @@ Both applications are **client-server** architectures, where the server listens 
 - **Sockets (Unix & Internet Domain)**: To implement inter-process communication (IPC).
 - **Poll**: For non-blocking I/O handling.
 
-## Getting Started
+## Prerequisites
 
-To get started with this project, follow the steps below:
+Before you start using this project, ensure you have the following:
 
-### Prerequisites
+- **A Linux-based OS** (or WSL on Windows).
+- **GCC Compiler**: Required for compiling the C programs.
+- **Basic understanding of C programming** and **networking concepts**.
+- **Basic knowledge of Sockets** and **IPC** (Inter-Process Communication).
+- Familiarity with the **client-server architecture**.
 
-- A Linux-based OS (or WSL on Windows).
-- GCC compiler installed.
-- Basic knowledge of C programming and networking concepts.
-
-### Installation
+## Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Anurag-006/os_ela.git
-   cd os_ela
+   git clone https://github.com/Anurag-006/23071A3231-OS-ELA.git
+   cd 23071A3231-OS-ELA
    ```
 
 2. Compile the server and client programs:
@@ -76,9 +80,9 @@ To get started with this project, follow the steps below:
    - `unix-domain/server` - The server using Unix Domain Sockets.
    - `unix-domain/client` - The client using Unix Domain Sockets.
 
-### Usage
+## Usage
 
-#### Internet Domain Socket Chat Application
+### Internet Domain Socket Chat Application
 
 1. **Start the server** by running the `server` program from the `internet-domain` directory:
 
@@ -98,7 +102,7 @@ To get started with this project, follow the steps below:
 
 3. Start chatting! You can send messages from the client, and the server will reply.
 
-#### Unix Domain Socket Chat Application
+### Unix Domain Socket Chat Application
 
 1. **Start the server** by running the `server` program from the `unix-domain` directory:
 
@@ -121,11 +125,13 @@ To get started with this project, follow the steps below:
 ## Directory Structure
 
 ```plaintext
-os_ela/
+23071A3231-OS-ELA/
 │
 ├── internet-domain/
 │   ├── client.c          # Client implementation for Internet Domain Socket
 │   └── server.c          # Server implementation for Internet Domain Socket
+│
+├── readme.md             # This readme file
 │
 └── unix-domain/
     ├── client.c          # Client implementation for Unix Domain Socket
