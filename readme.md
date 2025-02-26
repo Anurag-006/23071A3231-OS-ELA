@@ -98,7 +98,7 @@ Before you start using this project, ensure you have the following:
    ./internet-domain/client
    ```
 
-   The client will attempt to connect to the server on port `9999`.
+   The client will attempt to connect to the server on port `9999` The hardcoded port can be changed as per liking.
 
 3. Start chatting! You can send messages from the client, and the server will reply.
 
