@@ -168,3 +168,10 @@ os_ela/
 - **Connecting to the server**: The client connects to the server using the Unix Domain Socket at the local path (`/tmp/chat_socket`) using `connect()`.
 - **Sending messages**: The client sends messages to the server with `send()`.
 - **Receiving responses**: The client waits for and receives messages from the server using `recv()`.
+
+## Authors
+
+- **Avaneesh (23071A3206)**
+- **Datta (23071A3220)**
+- **Silpi (23071A3221)**
+- **Anurag (23071A3231)**
